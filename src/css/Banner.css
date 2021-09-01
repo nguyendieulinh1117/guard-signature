@@ -1,0 +1,72 @@
+.banner {
+  margin-top: 25px;
+  padding: 150px 0;
+  background-image: url(../images/banner.jpg);
+  background-position: center center;
+}
+
+.banner__title {
+  font-size: 50px;
+  line-height: 65px;
+  font-weight: 700;
+}
+
+.banner__content {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  padding-top: 50px;
+  width: 25vw;
+  padding-bottom: 50px;
+}
+.banner__link {
+  display: flex;
+  align-items: center;
+}
+.banner__link p {
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.banner__link__img {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--white);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.banner__link__img:hover {
+  background-color: var(--gray__color__2);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 100px 0;
+  }
+  .banner__content {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    padding: 50px 0;
+  }
+  .banner__title {
+    font-size: 30px;
+    line-height: 65px;
+    font-weight: 700;
+  }
+  .banner__content {
+    width: 50vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
